@@ -20,13 +20,11 @@ use yii\helpers\Url;
  */
 
 $this->title = Yii::t('usuario', 'Roles');
-$this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
 <?php $this->beginContent('@Da/User/resources/views/shared/admin_layout.php') ?>
 <div class="table-responsive">
-    test
 <?= GridView::widget(
     [
         'dataProvider' => $dataProvider,
